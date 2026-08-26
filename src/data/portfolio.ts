@@ -24,55 +24,55 @@ function vid(dir: string, file: string, label: string): MediaItem {
 
 /** 1. 游戏 Mod 开发（来自简历 Steam创意工坊 项目） */
 const modItems: MediaItem[] = [
-  img("mod", " (1).jpg", "Mod 01"),
-  img("mod", " (2).jpg", "Mod 02"),
-  img("mod", " (3).jpg", "Mod 03"),
-  img("mod", " (4).jpg", "Mod 04"),
-  img("mod", " (5).jpg", "Mod 05"),
-  img("mod", " (6).jpg", "Mod 06"),
-  img("mod", " (7).jpg", "Mod 07"),
-  img("mod", " (8).jpg", "Mod 08"),
-  img("mod", " (9).jpg", "Mod 09"),
-  img("mod", " (10).jpg", "Mod 10"),
+  img("mod", "(1).jpg", "Mod 01"),
+  img("mod", "(2).jpg", "Mod 02"),
+  img("mod", "(3).jpg", "Mod 03"),
+  img("mod", "(4).jpg", "Mod 04"),
+  img("mod", "(5).jpg", "Mod 05"),
+  img("mod", "(6).jpg", "Mod 06"),
+  img("mod", "(7).jpg", "Mod 07"),
+  img("mod", "(8).jpg", "Mod 08"),
+  img("mod", "(9).jpg", "Mod 09"),
+  img("mod", "(10).jpg", "Mod 10"),
 ];
 
 /** 2. 校园场景全栈管理系统开发 */
 const systemItems: MediaItem[] = [
-  vid("system", " (1).mp4", "系统演示"),
-  img("system", " (1).png", "系统 01"),
-  img("system", " (2).png", "系统 02"),
-  img("system", " (3).png", "系统 03"),
-  img("system", " (4).png", "系统 04"),
-  img("system", " (5).png", "系统 05"),
-  img("system", " (6).png", "系统 06"),
-  img("system", " (7).png", "系统 07"),
-  img("system", " (8).png", "系统 08"),
+  vid("system", "(1).mp4", "系统演示"),
+  img("system", "(1).png", "系统 01"),
+  img("system", "(2).png", "系统 02"),
+  img("system", "(3).png", "系统 03"),
+  img("system", "(4).png", "系统 04"),
+  img("system", "(5).png", "系统 05"),
+  img("system", "(6).png", "系统 06"),
+  img("system", "(7).png", "系统 07"),
+  img("system", "(8).png", "系统 08"),
 ];
 
 /** 3. 校园失物招领小程序 */
 const lostfoundItems: MediaItem[] = [
-  img("lostfound", " (1).png", "小程序 01"),
-  img("lostfound", " (2).png", "小程序 02"),
-  img("lostfound", " (3).png", "小程序 03"),
-  img("lostfound", " (4).png", "小程序 04"),
-  img("lostfound", " (5).png", "小程序 05"),
-  img("lostfound", " (6).png", "小程序 06"),
-  img("lostfound", " (7).png", "小程序 07"),
-  img("lostfound", " (8).png", "小程序 08"),
-  img("lostfound", " (9).png", "小程序 09"),
+  img("lostfound", "(1).png", "小程序 01"),
+  img("lostfound", "(2).png", "小程序 02"),
+  img("lostfound", "(3).png", "小程序 03"),
+  img("lostfound", "(4).png", "小程序 04"),
+  img("lostfound", "(5).png", "小程序 05"),
+  img("lostfound", "(6).png", "小程序 06"),
+  img("lostfound", "(7).png", "小程序 07"),
+  img("lostfound", "(8).png", "小程序 08"),
+  img("lostfound", "(9).png", "小程序 09"),
 ];
 
 /** 4. 社媒运营 / 视频创作 */
 const socialItems: MediaItem[] = [
-  vid("social", " (1).mp4", "社媒 01"),
-  vid("social", " (2).mp4", "社媒 02"),
-  vid("social", " (3).mp4", "社媒 03"),
-  vid("social", " (4).mp4", "社媒 04"),
-  vid("social", " (5).mp4", "社媒 05"),
-  vid("social", " (6).mp4", "社媒 06"),
-  vid("social", " (7).mp4", "社媒 07"),
-  vid("social", " (8).mp4", "社媒 08"),
-  vid("social", " (9).mp4", "社媒 09"),
+  vid("social", "(1).mp4", "社媒 01"),
+  vid("social", "(2).mp4", "社媒 02"),
+  vid("social", "(3).mp4", "社媒 03"),
+  vid("social", "(4).mp4", "社媒 04"),
+  vid("social", "(5).mp4", "社媒 05"),
+  vid("social", "(6).mp4", "社媒 06"),
+  vid("social", "(7).mp4", "社媒 07"),
+  vid("social", "(8).mp4", "社媒 08"),
+  vid("social", "(9).mp4", "社媒 09"),
 ];
 
 export const portfolioCategories: PortfolioCategory[] = [
@@ -108,9 +108,9 @@ export const portfolioCategories: PortfolioCategory[] = [
 
 /** 实习经历图片 */
 export const internshipImages: string[] = [
-  media("/internship/ (1).png"),
-  media("/internship/ (2).png"),
-  media("/internship/ (3).png"),
+  media("/internship/(1).png"),
+  media("/internship/(2).png"),
+  media("/internship/(3).png"),
 ];
 
 /** Hero 背景视频 */
