@@ -80,28 +80,28 @@ export const portfolioCategories: PortfolioCategory[] = [
     id: "mod",
     title: "游戏 Mod 开发",
     subtitle: "GAME MOD DEV",
-    desc: "基于 PDX Script 编写核心玩法逻辑，独立完成《钢铁雄心4》《维多利亚3》Mod 开发，Steam 创意工坊订阅量突破 3000。",
+    desc: "基于《钢铁雄心 4》《维多利亚 3》官方 Mod 开发规范，使用 PDX Script 编写核心玩法逻辑，独立完成国策树设计等核心模块，平台总订阅量突破 3000。",
     items: modItems,
   },
   {
     id: "social",
     title: "社媒运营作品",
     subtitle: "SOCIAL MEDIA",
-    desc: "独立负责短视频全流程产出，全网累计流量超 40 万，粉丝突破 2500，单条最高播放破万。",
+    desc: "独立负责视频内容全流程产出，涵盖选题策划、素材采集、后期剪辑、封面设计与多平台分发，全网累计总流量超 100 万，粉丝总量突破 3000，单条最高播放破 10 万。",
     items: socialItems,
   },
   {
     id: "system",
-    title: "校园全栈管理系统",
+    title: "全栈管理系统",
     subtitle: "FULL-STACK SYSTEM",
-    desc: "Java + Spring Boot + Vue3 前后端分离，含人事文件管理、教室预约、图书馆管理等，三套系统从 0 到 1 落地。",
+    desc: "Java + MySQL / Python + Pandas 独立开发人事与文件管理、教室预约与图书馆管理共四套系统，从 0 到 1 落地并通过项目验收。",
     items: systemItems,
   },
   {
     id: "lostfound",
     title: "校园失物招领小程序",
     subtitle: "MINI PROGRAM",
-    desc: "Spring Boot + Vue 微信小程序，前后端分离架构，集成 JWT 鉴权，全程独立负责需求、架构、联调与汇报。",
+    desc: "Spring Boot + Vue 微信小程序，前后端分离架构，集成 JWT 鉴权，独立完成需求分析、架构设计、联调与测试。",
     items: lostfoundItems,
   },
 ];
@@ -111,6 +111,15 @@ export const internshipImages: string[] = [
   media("/internship/(1).png"),
   media("/internship/(2).png"),
   media("/internship/(3).png"),
+];
+
+/** 第二段实习经历图片 */
+export const internship2Images: string[] = [
+  media("/internship2/(1).png"),
+  media("/internship2/(2).png"),
+  media("/internship2/(3).png"),
+  media("/internship2/(4).png"),
+  media("/internship2/(5).png"),
 ];
 
 /** Hero 背景视频 */
@@ -130,32 +139,16 @@ export const profile = {
 
 /** 简历：个人简介（分段，每段前加红点） */
 export const bioParagraphs: string[] = [
-  "你好，我是韩石锋，重庆移通学院软件工程专业 27 届应届毕业生，2005 年 1 月出生。",
-  "三重核心经验：游戏 Mod 独立开发（Steam 创意工坊订阅量 3000+）、短视频全流程运营（全网流量 40 万+，粉丝 2500+，单条最高播放破万）、全栈项目从 0 到 1 落地（三套校园管理系统均通过项目验收）。",
-  "技术上熟练使用 C++ / Python / JavaScript / Lua 等开发语言，掌握 Spring Boot / Vue3 / MySQL / SQLite 等技术栈；创作上精通 Photoshop / Premiere / After Effects / 剪映 / 达芬奇等后期工具。",
-  "曾担任古剑书院新媒体技术部部长，获「最具技术性的人」荣誉称号；校园电竞文化节核心策划，负责舞台气氛营造与现场背景视频制作，获年度十大品牌活动；中德文化节双语视频大赛获二等奖；暑期「三下乡」社会实践获 C 类优秀团队。",
+  "你好，我是韩石锋，重庆移通学院软件工程专业 27 届应届毕业生。",
+  "三重核心经验：游戏 Mod 独立开发（基于 PDX Script 编写核心玩法逻辑，Steam 创意工坊累计订阅量突破 3000）、短视频全流程运营（全网累计总流量超 100 万，粉丝总量突破 3000，单条内容最高播放量破 10 万）、全栈项目从 0 到 1 落地（三套校园管理系统均顺利通过项目验收）。",
+  "技术栈覆盖 Java / Spring Boot / Python / Vue3 / MySQL / SQLite 等前后端技术，熟悉 PDX Script、JWT 鉴权、MyBatis-Plus 等；创作工具精通 Photoshop / Premiere / After Effects / 剪映专业版 / 达芬奇，具备完整的视频内容全流程产出能力。",
+  "曾任古剑书院新媒体技术部部长，获「最具技术性的人」荣誉称号；任校园电竞文化节核心策划，负责舞台气氛营造与现场背景视频制作，斩获网络总流量 100w+，获年度十大品牌活动；中德文化节双语视频大赛获二等奖；暑期「三下乡」社会实践获 C 类优秀团队。",
   "擅长在技术实现与视觉把控之间找到平衡，无论是代码架构还是交互动效，都追求细节与品质。期待加入你的团队，带来技术能力与创意视角的双重价值。",
-];
-
-/** 简历：技能标签 */
-export const skills: { group: string; tags: string[] }[] = [
-  {
-    group: "开发语言",
-    tags: ["C++", "Python", "JavaScript(ES6+)", "HTML5", "CSS3", "Lua"],
-  },
-  {
-    group: "常用编程软件",
-    tags: ["TraeCode", "CodeX", "notepad++", "IntelliJIDEA", "PyCharm", "HBuilder"],
-  },
-  {
-    group: "常用后期制作软件",
-    tags: ["Adobe Photoshop", "Adobe Premiere", "Adobe After Effects", "剪映", "达芬奇"],
-  },
 ];
 
 /** 简历：实习经历（仅一段） */
 export const internship = {
-  period: "2026.07 - 2026.09",
+  period: "2026.07 - 2026.08",
   role: "游戏运维实习生",
   company: "天津青纤网络科技有限公司",
   descParagraphs: [
@@ -165,6 +158,20 @@ export const internship = {
     "保障多轮游戏版本顺利上线，协助完成多轮版本测试，玩家反馈问题做到及时收集归档，保障服务器稳定运营。",
   ],
   tags: ["版本运维", "GM后台", "日志分析", "AI辅助开发", "MMO"],
+};
+
+/** 简历：第二段实习经历 */
+export const internship2 = {
+  period: "2026.09 - 2026.10",
+  role: "AIGC实习生",
+  company: "芜湖玩家盟网络科技有限公司",
+  descParagraphs: [
+    "参与《失控进化》第三期项目收尾阶段的整体运营，负责 AIGC 视频资源的整理与归档，并完成全平台视频数据爬取。",
+    "参与《穿越火线：枪战王者》（CFM）AIGC 视频的全流程制作，覆盖脚本生成、AI 素材生成、剪辑包装到发布与数据运营各环节。",
+    "借助 ChatGPT、Codex 辅助脚本撰写与图片处理，使用即梦生成 AI 视频素材，剪映完成剪辑，并通过飞书跟踪复盘数据。",
+    "任职期间全平台总流量突破 200w，单条内容最高播放量突破 80 万。",
+  ],
+  tags: ["AIGC", "视频制作", "数据运营", "ChatGPT", "即梦", "剪映"],
 };
 
 /** 联系方式 */
@@ -189,9 +196,10 @@ export const education = {
   degree: "软件工程 · 本科",
   period: "2023/09 - 至今",
   highlights: [
-    "任校园电竞文化节核心策划，负责舞台气氛营造、现场拍摄及后期制作，获年度十大品牌活动",
-    "任古剑书院新媒体技术部部长，获「最具技术性的人」荣誉称号",
-    "中德文化节双语视频征集大赛获二等奖",
-    "暑期「三下乡」社会实践获 C 类优秀团队",
+    "2023.09 - 2024.06 任信息安全学院宣传部暨古剑书院学生自治委员会新媒体技术部干事，期间多次获评「优秀干事」",
+    "2023.10 参加德国工程学院第十四届中德文化节双语视频征集大赛，获二等奖",
+    "2024.06 - 2025.09 任古剑书院新媒体技术部部长，期间获「最具技术性的人」荣誉称号",
+    "2024.07 参加暑期「三下乡」社会实践活动，所在团队获评 C 类优秀团队",
+    "2024.10 任「竞无止境·当燃有感」校园电竞文化节核心策划，负责舞台气氛营造、现场拍摄及后期制作，斩获网络总流量 100w+，获年度十大品牌活动",
   ],
 };

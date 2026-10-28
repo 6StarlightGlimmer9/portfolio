@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { profile, bioParagraphs, skills, education } from "@/data/portfolio";
+import { profile, bioParagraphs, education } from "@/data/portfolio";
 
 export function SectionTitle({
   index,
@@ -116,56 +116,8 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* 第二行：技能矩阵 + 教育经历 平铺开 */}
-        <div className="mt-8 grid gap-8 lg:grid-cols-[2fr_1fr]">
-          {/* 技能矩阵 - 宽 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="panel corner-cut p-8"
-          >
-            <h3 className="mb-6 font-mono text-base tracking-[0.3em] text-accent-soft"
-              style={{ textShadow: "0 0 8px rgba(255,0,60,0.4)" }}
-            >
-              // 技能矩阵
-            </h3>
-            <div className="space-y-6">
-              {skills.map((g) => (
-                <div key={g.group}>
-                  <div className="mb-3 flex items-center gap-3">
-                    <span className="h-3 w-3 bg-accent" style={{ boxShadow: "0 0 8px rgba(255,0,60,0.6)" }} />
-                    <span
-                      className="font-display text-lg font-bold tracking-wider text-foreground"
-                      style={{ textShadow: "0 1px 6px rgba(0,0,0,0.8)" }}
-                    >
-                      {g.group}
-                    </span>
-                    <span className="h-px flex-1 bg-line-soft" />
-                    <span className="font-mono text-sm text-muted"
-                      style={{ textShadow: "0 1px 3px rgba(0,0,0,0.4)" }}
-                    >
-                      {String(g.tags.length).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {g.tags.map((t) => (
-                      <span
-                        key={t}
-                        data-cursor="pointer"
-                        className="border border-line-soft bg-bg-soft px-4 py-2 font-mono text-base text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-accent hover:text-foreground hover:shadow-[0_0_12px_rgba(255,0,60,0.4)]"
-                        style={{ textShadow: "0 1px 3px rgba(0,0,0,0.4)" }}
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
+        {/* 第二行：教育经历 */}
+        <div className="mt-8">
           {/* 教育经历 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -193,16 +145,26 @@ export default function About() {
             <p className="mt-1 font-mono text-sm text-accent-soft"
               style={{ textShadow: "0 0 6px rgba(255,0,60,0.3)" }}
             >{education.period}</p>
-            <ul className="mt-5 space-y-3">
+
+            {/* 教育经历时间线 */}
+            <ul className="relative mt-6 space-y-4 border-l border-line-soft pl-7">
               {education.highlights.map((h, i) => (
-                <li
+                <motion.li
                   key={i}
-                  className="font-sans text-base leading-relaxed text-foreground/85"
+                  initial={{ opacity: 0, x: -16 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, delay: i * 0.12, ease: "easeOut" }}
+                  className="group relative font-sans text-base leading-relaxed text-foreground/85 transition-all duration-300 hover:translate-x-1 hover:text-foreground"
                   style={{ textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
                 >
-                  <span className="mr-2 text-accent">▸</span>
+                  {/* 时间线节点 */}
+                  <span
+                    className="absolute -left-[33px] top-2 h-3 w-3 rounded-full bg-accent ring-4 ring-bg transition-all duration-300 group-hover:scale-125"
+                    style={{ boxShadow: "0 0 8px rgba(255,0,60,0.8), 0 0 16px rgba(255,0,60,0.4)" }}
+                  />
                   {h}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </motion.div>
